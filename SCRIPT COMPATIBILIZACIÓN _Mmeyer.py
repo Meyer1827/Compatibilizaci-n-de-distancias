@@ -4,6 +4,7 @@ import geopy
 K0 =float(input("Ingrese factor de escala : "))
 a = float(input("Ingrese Semi eje mayor : "))
 e = float(input("Ingrese primera excentricidad  : "))
+Hm = float(input("Ingrese altura media  : "))
 
 # Definir valores para Lat1 y Lat2 (en radianes)
 Lat1_deg = float(input("Ingrese Latitud 1 en °: "))
@@ -49,7 +50,7 @@ DCE = (2 * Rm) *  (math.sin(DAE / (2 * Rm)))
 
 
 # Calcular Distancia Horizontal (DH)
-Hm = 476.685
+
 DH = (DCE / Rm) * (Rm + Hm)
 
 
